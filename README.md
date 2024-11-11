@@ -38,3 +38,10 @@ Once the repository is cloned, run the following command to build and start all 
 docker-compose up --build
 ```
 
+### Docker Compose File Overview
+
+The docker-compose.yml file defines the following services:
+
+- **Node.js:** The app's backend server.
+- **PostgreSQL:** The database service.
+- **pgAdmin:** The web-based UI for managing the PostgreSQL database.
