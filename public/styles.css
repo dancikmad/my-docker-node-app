@@ -1,0 +1,39 @@
+/* Body styling to create a responsive, wrapping flex layout */
+body {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;            /* Enable wrapping of items */
+    justify-content: center;    /* Center the cards horizontally */
+    gap: 24px;                  /* Space between the cards */
+}
+
+/* Card styling */
+.card {
+    width: 240px;               /* Fixed width for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;           /* Prevent image overflow */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Container inside the card */
+.container {
+    padding: 0 12px;
+}
+
+/* Image styling */
+img {
+    width: 100%;                /* Make image take full width of card */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+
+/* Optional: Adjusting text styles for the card */
+h4, p {
+    margin: 10px 0;
+}
